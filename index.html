@@ -1,120 +1,152 @@
-
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUZJAV - Restaurante</title>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="carta">
+    <div class="rosa rosa-izquierda">🌹</div>
+    <div class="rosa rosa-derecha">🌹</div>
 
-        <header>
+    <main class="carta">
+
+        <header class="encabezado">
             <h1>LUZJAV</h1>
-            <p>RESTAURANTE · CARTA</p>
+            <p>RESTAURANTE</p>
             <div class="linea-dorada"></div>
+            <h2>Nuestra carta</h2>
+            <p class="subtitulo">Una experiencia para disfrutar</p>
         </header>
 
-        <section>
+        <section class="seccion">
             <h2>ENTRANTES</h2>
 
-            <img src="caviar.png" alt="Tostas de caviar">
-            <div class="plato">
-                <span>Tostas de caviar almas</span>
-                <span class="precio">6,50 €</span>
-            </div>
+            <article class="plato">
+                <img src="caviar.png" alt="Tostas de caviar">
+                <div class="info">
+                    <h3>Tostas de caviar almas</h3>
+                    <p>6,50 €</p>
+                </div>
+            </article>
 
-            <img src="salmorejo.png" alt="Salmorejo">
-            <div class="plato">
-                <span>Salmorejo</span>
-                <span class="precio">5,00 €</span>
-            </div>
+            <article class="plato">
+                <img src="salmorejo.png" alt="Salmorejo">
+                <div class="info">
+                    <h3>Salmorejo</h3>
+                    <p>5,00 €</p>
+                </div>
+            </article>
 
-            <img src="pastel de salmon .png" alt="Pastel de salmón">
-            <div class="plato">
-                <span>Pastel de salmón</span>
-                <span class="precio">7,80 €</span>
-            </div>
+            <article class="plato">
+                <img src="pastel%20de%20salmon%20.png" alt="Pastel de salmón">
+                <div class="info">
+                    <h3>Pastel de salmón</h3>
+                    <p>7,80 €</p>
+                </div>
+            </article>
         </section>
 
-        <section>
+        <section class="seccion">
             <h2>RACIONES</h2>
 
-            <img src="sepia a la plancha .png" alt="Sepia">
-            <div class="plato">
-                <span>Sepia a la plancha</span>
-                <span class="precio">15,90 €</span>
-            </div>
+            <article class="plato">
+                <img src="sepia%20a%20la%20plancha%20.png" alt="Sepia a la plancha">
+                <div class="info">
+                    <h3>Sepia a la plancha</h3>
+                    <p>15,90 €</p>
+                </div>
+            </article>
 
-            <img src="rosotto a la parmesana .png" alt="Risotto">
-            <div class="plato">
-                <span>Risotto a la parmesana</span>
-                <span class="precio">19,80 €</span>
-            </div>
+            <article class="plato">
+                <img src="rosotto%20a%20la%20parmesana%20.png" alt="Risotto a la parmesana">
+                <div class="info">
+                    <h3>Risotto a la parmesana</h3>
+                    <p>19,80 €</p>
+                </div>
+            </article>
 
-            <img src="langostino al thermidor.png" alt="Langostinos">
-            <div class="plato">
-                <span>Langostinos al Thermidor</span>
-                <span class="precio">21,60 €</span>
-            </div>
+            <article class="plato">
+                <img src="langostino%20al%20thermidor.png" alt="Langostinos al Thermidor">
+                <div class="info">
+                    <h3>Langostinos al Thermidor</h3>
+                    <p>21,60 €</p>
+                </div>
+            </article>
         </section>
 
-        <section>
+        <section class="seccion">
             <h2>POSTRES</h2>
 
-            <img src="mouse de limon .png" alt="Mousse">
-            <div class="plato">
-                <span>Mousse de limón</span>
-                <span class="precio">7,00 €</span>
-            </div>
+            <article class="plato">
+                <img src="mouse%20de%20limon%20.png" alt="Mousse de limón">
+                <div class="info">
+                    <h3>Mousse de limón</h3>
+                    <p>7,00 €</p>
+                </div>
+            </article>
 
-            <img src="tarta de lotus.png" alt="Tarta Lotus">
-            <div class="plato">
-                <span>Tarta de Lotus</span>
-                <span class="precio">7,50 €</span>
-            </div>
+            <article class="plato">
+                <img src="tarta%20de%20lotus.png" alt="Tarta de Lotus">
+                <div class="info">
+                    <h3>Tarta de Lotus</h3>
+                    <p>7,50 €</p>
+                </div>
+            </article>
 
-            <img src="tarta de fruta .png" alt="Tarta de fruta">
-            <div class="plato">
-                <span>Tarta de fruta</span>
-                <span class="precio">7,00 €</span>
-            </div>
+            <article class="plato">
+                <img src="tarta%20de%20fruta%20.png" alt="Tarta de fruta">
+                <div class="info">
+                    <h3>Tarta de fruta</h3>
+                    <p>7,00 €</p>
+                </div>
+            </article>
         </section>
 
-        <div class="menu">
+        <section class="seccion menu-dia">
             <h2>MENÚ DEL DÍA</h2>
             <p>Entrante + Ración + Postre</p>
-        </div>
-
-        <section>
-            <h2>BEBIDAS</h2>
-
-            <img src="vinos .png" alt="Vinos">
-            <div class="plato">
-                <span>Vinos</span>
-                <span class="precio">17,00 €</span>
-            </div>
-
-            <div class="plato">
-                <span>Cócteles</span>
-                <span class="precio">15,00 €</span>
-            </div>
-
-            <img src="refrescos .png" alt="Refrescos">
-            <div class="plato">
-                <span>Refrescos</span>
-                <span class="precio">3,50 €</span>
-            </div>
         </section>
 
-    </div>
+        <section class="seccion">
+            <h2>BEBIDAS</h2>
+
+            <article class="plato">
+                <img src="vinos%20.png" alt="Vinos">
+                <div class="info">
+                    <h3>Vinos</h3>
+                    <p>17,00 €</p>
+                </div>
+            </article>
+
+            <article class="plato">
+                <div class="imagen-icono">🍸</div>
+                <div class="info">
+                    <h3>Cócteles</h3>
+                    <p>15,00 €</p>
+                </div>
+            </article>
+
+            <article class="plato">
+                <img src="refrescos%20.png" alt="Refrescos">
+                <div class="info">
+                    <h3>Refrescos</h3>
+                    <p>3,50 €</p>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="linea-dorada"></div>
+            <p>LUZJAV · RESTAURANTE</p>
+            <p class="frase-final">Gracias por visitarnos</p>
+        </footer>
+
+    </main>
 
 </body>
 </html>
