@@ -1,138 +1,220 @@
-
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 30px 10px;
-    background-color: #071629 !important;
-    font-family: Georgia, serif;
+    background-color: #071629;
+    font-family: 'Montserrat', sans-serif;
+    color: #e8d4a0;
+    padding: 45px 15px;
+    min-height: 100vh;
 }
 
-/* CARTA */
+/* ROSAS DE LAS ESQUINAS */
+
+.rosa {
+    position: fixed;
+    top: 12px;
+    font-size: 65px;
+    z-index: 0;
+    opacity: 0.9;
+}
+
+.rosa-izquierda {
+    left: 15px;
+}
+
+.rosa-derecha {
+    right: 15px;
+}
+
+/* CARTA CENTRAL */
+
 .carta {
-    background-color: #071629 !important;
-    color: #E5D4A5;
+    position: relative;
+    z-index: 1;
     max-width: 650px;
-    margin: auto;
-    padding: 25px 20px;
-    text-align: center;
-    border: 2px solid #B99A58;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+    width: 100%;
+    margin: 35px auto;
+    padding: 35px 30px;
+    background: #10243b;
+    border: 2px solid #c6a45c;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
 }
 
 /* ENCABEZADO */
-header {
+
+.encabezado {
     text-align: center;
-    padding: 30px 10px;
-    border-bottom: 1px solid #B99A58;
+    margin-bottom: 35px;
 }
 
-header h1 {
+.encabezado h1 {
     font-family: 'Great Vibes', cursive;
-    font-size: 85px;
+    font-size: 75px;
     font-weight: normal;
-    color: #D6B66E;
-    letter-spacing: 4px;
-    margin: 0;
+    color: #e6c477;
+    letter-spacing: 2px;
 }
 
-header p {
-    color: #D6B66E;
+.encabezado > p:first-of-type {
     font-size: 12px;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
+    margin-top: -5px;
 }
 
 .linea-dorada {
-    width: 100px;
-    height: 2px;
-    background-color: #B99A58;
-    margin: 15px auto;
+    width: 75%;
+    height: 1px;
+    background: #c6a45c;
+    margin: 20px auto;
 }
 
-/* APARTADOS */
-section {
-    margin: 25px 0;
-}
-
-section h2,
-.menu h2 {
-    font-size: 15px;
-    letter-spacing: 4px;
-    color: #D6B66E;
-    margin-bottom: 15px;
+.encabezado h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
     font-weight: normal;
-    border-bottom: 1px solid #B99A58;
-    padding-bottom: 8px;
+    color: #e6c477;
 }
 
-/* FOTOS */
-section img {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    display: block;
-    margin: 15px auto 8px;
-    border: 2px solid #B99A58;
-    border-radius: 50%;
+.subtitulo {
+    font-size: 11px;
+    color: #d2c5a6;
+    margin-top: 8px;
+}
+
+/* SECCIONES */
+
+.seccion {
+    margin-bottom: 35px;
+}
+
+.seccion h2 {
+    text-align: center;
+    color: #e6c477;
+    font-size: 19px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #8c7448;
 }
 
 /* PLATOS */
+
 .plato {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    padding: 10px 5px;
-    border-bottom: 1px dashed #9B824F;
-    font-size: 14px;
-    color: #E5D4A5;
+    gap: 18px;
+    padding: 12px 5px;
+    border-bottom: 1px solid rgba(198, 164, 92, 0.25);
 }
 
-.precio {
-    font-weight: bold;
-    color: #D6B66E;
-    white-space: nowrap;
+.plato img,
+.imagen-icono {
+    width: 88px;
+    height: 88px;
+    min-width: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #c6a45c;
+}
+
+.imagen-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 37px;
+    background: #071629;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h3 {
+    color: #f1e4c3;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.info p {
+    color: #e6c477;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 /* MENÚ DEL DÍA */
-.menu {
-    margin: 30px 0;
-    padding: 20px;
-    border-top: 2px solid #B99A58;
-    border-bottom: 2px solid #B99A58;
+
+.menu-dia {
     text-align: center;
+    padding: 22px 12px;
+    border: 1px solid #c6a45c;
+    border-radius: 8px;
 }
 
-.menu p {
+.menu-dia h2 {
+    border: none;
+    margin-bottom: 8px;
+}
+
+.menu-dia p {
+    color: #f1e4c3;
     font-size: 14px;
-    letter-spacing: 2px;
-    color: #E5D4A5;
+}
+
+/* PIE DE CARTA */
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+}
+
+footer p {
+    color: #e6c477;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+footer .frase-final {
+    font-family: 'Great Vibes', cursive;
+    font-size: 27px;
+    letter-spacing: 0;
+    margin-top: 10px;
 }
 
 /* MÓVILES */
-@media (max-width: 600px) {
+
+@media (max-width: 500px) {
+    body {
+        padding: 20px 10px;
+    }
+
     .carta {
-        padding: 20px 12px;
+        padding: 25px 15px;
+        margin-top: 55px;
     }
 
-    header h1 {
-        font-size: 60px;
+    .encabezado h1 {
+        font-size: 62px;
     }
 
-    section img {
-        width: 80px;
-        height: 80px;
+    .plato img,
+    .imagen-icono {
+        width: 72px;
+        height: 72px;
+        min-width: 72px;
     }
 
-    .plato {
-        font-size: 12px;
-    }
-
-    section h2,
-    .menu h2 {
+    .info h3 {
         font-size: 13px;
-        letter-spacing: 3px;
+    }
+
+    .rosa {
+        font-size: 45px;
     }
 }
