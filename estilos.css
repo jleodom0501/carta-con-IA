@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 10px;
+    background: #F5F0E9;
+    font-family: Georgia, serif;
+}
+
+/* CARTA */
+.carta {
+    background: #071629;
+    color: #D9BD7A;
+    max-width: 650px;
+    margin: auto;
+    padding: 25px 20px;
+    text-align: center;
+    border: 2px solid #B99A58;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+}
+
+/* CABECERA */
+header {
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #B99A58;
+}
+
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 65px;
+    font-weight: normal;
+    color: #D6B66E;
+    margin: 0;
+}
+
+header p {
+    color: #E5D4A5;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+/* APARTADOS */
+section {
+    margin: 25px 0;
+}
+
+section h2,
+.menu h2 {
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #D6B66E;
+    margin-bottom: 15px;
+    font-weight: normal;
+    border-bottom: 1px solid #B99A58;
+    padding-bottom: 8px;
+}
+
+/* FOTOGRAFÍAS PEQUEÑAS */
+section img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto 8px;
+    border: 1px solid #B99A58;
+    border-radius: 8px;
+}
+
+/* PLATOS Y PRECIOS */
+.plato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 5px;
+    border-bottom: 1px dashed #9B824F;
+    font-size: 14px;
+    color: #E5D4A5;
+}
+
+.precio {
+    font-weight: bold;
+    color: #D6B66E;
+    white-space: nowrap;
+}
+
+/* MENÚ DEL DÍA */
+.menu {
+    margin: 30px 0;
+    padding: 20px;
+    border-top: 2px solid #B99A58;
+    border-bottom: 2px solid #B99A58;
+    text-align: center;
+}
+
+.menu p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #E5D4A5;
+}
+
+/* ADAPTACIÓN A MÓVILES */
+@media (max-width: 600px) {
+
+    .carta {
+        padding: 20px 12px;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    section img {
+        width: 130px;
+        height: 90px;
+    }
+
+    .plato {
+        font-size: 12px;
+    }
+
+    section h2,
+    .menu h2 {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+}
