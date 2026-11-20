@@ -6,14 +6,14 @@
 body {
     margin: 0;
     padding: 30px 10px;
-    background-color: #F5F0E9;
+    background-color: #071629 !important;
     font-family: Georgia, serif;
 }
 
-/* CARTA AZUL MARINO */
+/* CARTA */
 .carta {
-    background-color: #071629;
-    color: #D9BD7A;
+    background-color: #071629 !important;
+    color: #E5D4A5;
     max-width: 650px;
     margin: auto;
     padding: 25px 20px;
@@ -22,7 +22,7 @@ body {
     box-shadow: 0 3px 15px rgba(0,0,0,0.3);
 }
 
-/* ENCABEZADO LUZJAV */
+/* ENCABEZADO */
 header {
     text-align: center;
     padding: 30px 10px;
@@ -67,7 +67,7 @@ section h2,
     padding-bottom: 8px;
 }
 
-/* FOTOGRAFÍAS PEQUEÑAS Y REDONDAS */
+/* FOTOS */
 section img {
     width: 90px;
     height: 90px;
@@ -78,7 +78,7 @@ section img {
     border-radius: 50%;
 }
 
-/* PLATOS Y PRECIOS */
+/* PLATOS */
 .plato {
     display: flex;
     justify-content: space-between;
@@ -111,9 +111,8 @@ section img {
     color: #E5D4A5;
 }
 
-/* ADAPTACIÓN A MÓVILES */
+/* MÓVILES */
 @media (max-width: 600px) {
-
     .carta {
         padding: 20px 12px;
     }
